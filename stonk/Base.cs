@@ -9,11 +9,9 @@ namespace stonk
         public static void Main(string[] args)
         {
             DotEnv.Load();
-            // Other code
-            Console.WriteLine("Hello World!");
-            
-            // Console.WriteLine(APCA_API_KEY_ID);
             Console.WriteLine(Environment.GetEnvironmentVariable("APCA_API_KEY_ID"));
+            
+            
         }
     }
 }

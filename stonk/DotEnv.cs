@@ -11,10 +11,8 @@ namespace stonk
             // possibly null, leaving it as-is for readability
             string pathToProjectRoot = Directory.GetParent(Environment.CurrentDirectory).Parent.Parent.FullName;
             string pathToFile = pathToProjectRoot +  "/apca.env";
-            
             Dictionary<string,string> env_vars = new Dictionary<string,string>();
-
-
+            
             try
             {
                 StreamReader sr = new StreamReader(pathToFile);
