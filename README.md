@@ -1,6 +1,6 @@
 # stonk
 
-** GOALS **
+**GOALS**
  - Calendar view of daily price action at minute resolution for a given symbol.
  - Automated trader with 15min delayed live data and adjustable parameters.
 
