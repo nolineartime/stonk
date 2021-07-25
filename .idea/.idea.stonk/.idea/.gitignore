@@ -11,3 +11,6 @@
 /dataSources.local.xml
 # Editor-based HTTP Client requests
 /httpRequests/
+
+# environment variables for api keys
+*.env
