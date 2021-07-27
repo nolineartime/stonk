@@ -22,3 +22,8 @@
 /home/mintuser/RiderProjects/stonk/stonk/bin/Debug/net5.0/Microsoft.Extensions.Primitives.dll
 /home/mintuser/RiderProjects/stonk/stonk/bin/Debug/net5.0/System.Runtime.CompilerServices.Unsafe.dll
 /home/mintuser/RiderProjects/stonk/stonk/obj/Debug/net5.0/stonk.csproj.CopyComplete
+/home/mintuser/RiderProjects/stonk/stonk/bin/Debug/net5.0/Alpaca.Markets.dll
+/home/mintuser/RiderProjects/stonk/stonk/bin/Debug/net5.0/Newtonsoft.Json.dll
+/home/mintuser/RiderProjects/stonk/stonk/bin/Debug/net5.0/Polly.dll
+/home/mintuser/RiderProjects/stonk/stonk/bin/Debug/net5.0/System.IO.Pipelines.dll
+/home/mintuser/RiderProjects/stonk/stonk/bin/Debug/net5.0/NodaTime.dll

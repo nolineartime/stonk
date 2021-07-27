@@ -6,13 +6,15 @@ namespace stonk
 {
     public class Base
     {
-        public static void Main(string[] args)
-        {
-            DotEnv.Load();
-            Console.WriteLine(Environment.GetEnvironmentVariable("APCA_API_KEY_ID"));
-            
-            
-        }
+        // public static void Main(string[] args)
+        // {
+        //      // FOR TESTING
+        //     DotEnv.Load();
+        //     Console.WriteLine(Environment.GetEnvironmentVariable("APCA_API_KEY_ID"));
+        //     Console.WriteLine("If you see your key we are good to proceed.");
+        //     
+        //     
+        // }
     }
 }
 

@@ -6,9 +6,11 @@
     </PropertyGroup>
 
     <ItemGroup>
+      <PackageReference Include="Alpaca.Markets" Version="5.1.0-beta2" />
       <PackageReference Include="DotEnvFile" Version="2.1.0" />
       <PackageReference Include="Microsoft.Extensions.Configuration" Version="6.0.0-preview.6.21352.12" />
       <PackageReference Include="Microsoft.Extensions.Configuration.EnvironmentVariables" Version="6.0.0-preview.6.21352.12" />
+      <PackageReference Include="NodaTime" Version="3.0.5" />
     </ItemGroup>
 
 </Project>

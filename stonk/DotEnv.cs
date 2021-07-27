@@ -19,7 +19,7 @@ namespace stonk
                 var line = sr.ReadLine();
                 while (line != null)
                 {
-                    Console.WriteLine(line);
+                    // Console.WriteLine(line);
                     env_vars.Add(line.Split("=")[0],line.Split("=")[1]);
                     
                     //Read the next line
