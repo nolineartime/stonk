@@ -46,19 +46,19 @@ namespace stonk
             Console.WriteLine("Done with GetHistoricalData.cs");
         }
         
-        public async void GetDay()
+        public async void GetDay(String symbol, int day, int month, int year)
         {
             DotEnv.Load();
             String key_id = Environment.GetEnvironmentVariable("APCA_API_KEY_ID");
             String secret_key = Environment.GetEnvironmentVariable("APCA_API_SECRET_KEY");
-            String symbol = APCA_SYMBOL;
+            symbol = APCA_SYMBOL;
             alpacaDataClient = Environments.Paper.
                 GetAlpacaDataClient(new SecretKey (key_id, secret_key));
             
             //following naming convention in apca api
             // use nodatime
-            var from = TimeZoneInfo.ConvertTimeToUtc(DateTime.Parse("7/20/2021 4:00:00 AM"));
-            var into = TimeZoneInfo.ConvertTimeToUtc(DateTime.Parse("7/20/2021 4:30:00 PM"));
+            var from = TimeZoneInfo.ConvertTimeToUtc(DateTime.Parse(day + "/" + month + "/" + year + " 4:00:00 AM"));
+            var into = TimeZoneInfo.ConvertTimeToUtc(DateTime.Parse(day + "/" + month + "/" + year + " 4:30:00 PM"));
 
             var barSet = await alpacaDataClient.ListHistoricalBarsAsync(
                 new HistoricalBarsRequest(
