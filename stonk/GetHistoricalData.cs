@@ -57,6 +57,7 @@ namespace stonk
             
             //following naming convention in apca api
             // use nodatime
+            // note: apca supports pre/post market in the range 9:00am-6:00pm
             var from = TimeZoneInfo.ConvertTimeToUtc(DateTime.Parse(day + "/" + month + "/" + year + " 4:00:00 AM"));
             var into = TimeZoneInfo.ConvertTimeToUtc(DateTime.Parse(day + "/" + month + "/" + year + " 4:30:00 PM"));
 
