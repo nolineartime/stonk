@@ -42,6 +42,8 @@ namespace stonk
                 // need to unpack the json objects somewhere
                 // Console.WriteLine(TimeZoneInfo.ConvertTimeFromUtc(DateTime.Parse(bar.Close.ToString()),est_tz));
                 Console.WriteLine(bar.Close);
+                Console.WriteLine(bar.ToString());
+                BarToJson(bar);
             }
             Console.WriteLine("Done with GetHistoricalData.cs");
         }
@@ -73,9 +75,31 @@ namespace stonk
             {
                 // need to unpack the json objects somewhere
                 // Console.WriteLine(TimeZoneInfo.ConvertTimeFromUtc(DateTime.Parse(bar.Close.ToString()),est_tz));
-                Console.WriteLine(bar.Close);
+                // Console.WriteLine(bar.Close);
+                // Console.WriteLine(bar.ToString());
+                
             }
             Console.WriteLine("Done with GetHistoricalData.cs");
+            
+        }
+
+        public void BarToJson(IBar bar)
+        {
+            String symbol = bar.Symbol;
+            Decimal open = bar.Open;
+            Decimal high = bar.High;
+            Decimal low = bar.Low;
+            Decimal close = bar.Close;
+            Decimal volume = bar.Volume;
+            DateTime time = bar.TimeUtc;
+            
+            Console.WriteLine(symbol+open);
+            
+        }
+
+        public void PrintBar(IBar bar)
+        {
+            Console.WriteLine("{");
         }
     }
 }
